@@ -62,6 +62,10 @@ function Check(indx){
     else
     {
         h2.innerText = `Game Over! Press any key to start.`;
+        document.querySelector("body").style.backgroundColor = "red";
+        setTimeout(function(){
+            document.querySelector("body").style.backgroundColor = "white";
+        }, 170);
         started = false;
         gameSeq = [];
         level = 0;
