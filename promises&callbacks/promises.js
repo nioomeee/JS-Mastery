@@ -29,10 +29,10 @@ function SavetoDb(data){
         let internetSpeed = Math.floor(Math.random() * 10)+1;
 
         if (internetSpeed > 4){
-            resolve("Data saved successfully");
+            resolve(console.log("Data saved successfully");
         }
         else{
-            reject("Weak connection");
+            reject(console.log("Weak connection"));
         }
     });
 }
