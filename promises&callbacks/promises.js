@@ -8,18 +8,18 @@
 //         console.log("Weak connection!");
 //     }
 // }
-SavetoDb("Niomi", ()=>{
-    console.log("Succesfully data stored!");
-    SavetoDb("Soni", ()=>{
-        console.log("SucceLsfully data stored!");
-        SavetoDb("Hello World", ()=>{
-            console.log("SucceLsfully data stored!");
-        }, ()=>{
-            console.log("Weak connection");
-        })
-    }, ()=>{
-        console.log("Weak connection");
-    })
-}, ()=>{
-    console.log("Weak connection");
-})
+// SavetoDb("Niomi", ()=>{
+//     console.log("Succesfully data stored!");
+//     SavetoDb("Soni", ()=>{
+//         console.log("SucceLsfully data stored!");
+//         SavetoDb("Hello World", ()=>{
+//             console.log("SucceLsfully data stored!");
+//         }, ()=>{
+//             console.log("Weak connection");
+//         })
+//     }, ()=>{
+//         console.log("Weak connection");
+//     })
+// }, ()=>{
+//     console.log("Weak connection");
+// })
