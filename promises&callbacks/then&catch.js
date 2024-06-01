@@ -11,8 +11,7 @@ function SavetoDb(data){
     });
 }
 
-let request = SavetoDb("Niomi"); //request = promise
-request.then(()=>{
+SavetoDb("Niomi").then(()=>{
     console.log("Data saved successfully");
     console.log(request);
 })
