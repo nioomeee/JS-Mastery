@@ -7,6 +7,16 @@ let validRes = JSON.parse(jsonRes);
 console.log(validRes);
 console.log(validRes.fact);
 
+let student={
+    Name: "Niomi",
+    Marks: 85.85
+};
+
+let jsonStud = JSON.stringify(student);
+console.log(jsonStud);
+
+
+
 
 
 
