@@ -9,11 +9,23 @@ function changeColor(color, delay){
     });
 }
 
-let request = changeColor("red", 1000);
-console.log(request);
+let request = changeColor("red", 1000)
+.then(()=>{
+    console.log("Red color was displayed");
+    return changeColor("orange", 1000);
+})
+.then(()=>{
+    console.log("Orange color was displayed");
+    return changeColor("green", 1000);
+})
+.then(()=>{
+    console.log("Green color was displayed");
+    return changeColor("blue", 1000);
+})
+.then(()=>{
+    console.log("Blue color was displayed");
+})
 
-request = changeColor("Blue", 5000);
-console.log(request);
 // changeColor("red", 1000, ()=>{
 //     changeColor("orange", 1000, ()=>{
 //         changeColor("green", 1000, ()=>{
