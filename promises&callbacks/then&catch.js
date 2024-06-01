@@ -13,10 +13,8 @@ function SavetoDb(data){
 
 SavetoDb("Niomi").then(()=>{
     console.log("Data saved successfully");
-    console.log(request);
 })
 
 .catch(()=>{
     console.log("Weak connection");
-    console.log(request);
 })
