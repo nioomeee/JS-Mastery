@@ -36,3 +36,5 @@ function SavetoDb(data){
         }
     });
 }
+
+SavetoDb("Niomi");
