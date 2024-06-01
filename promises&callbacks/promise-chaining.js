@@ -18,6 +18,10 @@ SavetoDb("Hello World")
     })
     .then(()=>{
         console.og("Data saved successfully");
+        return SavetoDb("Soni");
+    })
+    .then(()=>{
+        console.og("Data saved successfully");
     })
    .catch(()=>{
                 console.log("Weak connection");
