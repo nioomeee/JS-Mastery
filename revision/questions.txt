@@ -1,0 +1,109 @@
+Hour 1: 
+let, const:
+
+1. Write a program that declares a variable using let, reassigns its value, and logs it. Try to do the same with a const variable and note the result.
+2. Demonstrate block scoping with let and const inside an if statement and compare it with the behavior of var.
+
+Arrow Functions (()=>):
+
+3. Convert a regular function to an arrow function. For example, rewrite a function that adds two numbers.
+4. Write an arrow function that filters an array of numbers, keeping only the even ones.
+5. Explain the difference in how this works in regular functions and arrow functions. Illustrate with an example using an object method.
+
+Template Literals (string): 
+
+6. Create a string using template literals that includes variables and expressions. For example, include a name variable and a calculation inside the string.
+7. Write a function that accepts a user’s first and last name and returns a greeting message using template literals.
+
+Default Parameters:
+
+8. Write a function that takes two parameters, where the second parameter has a default value. Test calling the function with and without the second argument.
+9. Write a function that calculates the total cost of an item, with a default discount rate applied. Allow the user to override the discount.
+
+Destructuring & Spread/Rest Operators:
+
+Array and Object Destructuring:
+
+10. Destructure an array of colors into individual color variables and log them.
+11. Given an object with properties name, age, and location, destructure it to extract these values and log them.
+
+Spread (...) and Rest Parameters:
+
+12. Write a function that takes a variable number of arguments using rest parameters and returns the sum of all the numbers passed.
+13. Merge two arrays using the spread operator. Show how you can also merge objects with the spread operator.
+
+Modules: import and export syntax:
+
+14. Create two files: math.js (with functions to add and subtract) and main.js. Export the functions from math.js and import them into main.js to perform operations.
+15. Split a single file into multiple modules and demonstrate how to import only specific functions from each module into another file.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hour 2: Functions & Scope
+
+Function Declarations and Expressions:
+
+1. Write a function declaration and a function expression that both perform the same task: multiplying two numbers. Test and log the results.
+2. What is the difference in hoisting between function declarations and function expressions? Write code to demonstrate this behavior.
+
+Closures and Lexical Scope:
+
+3. Create a closure where an inner function has access to the outer function’s variables even after the outer function has executed.
+4. Write a function that returns another function (using closures) and keeps a counter that tracks how many times the returned function has been called.
+
+Array Methods: map(), filter(), reduce(), forEach():
+
+5. Use map() to create a new array where each value is squared from the original array [1, 2, 3, 4, 5].
+6. Given an array of objects representing people ([{ name: 'Alice', age: 25 }, { name: 'Bob', age: 30 }, { name: 'Carol', age: 20 }]), use filter() to return an array of people older than 25.
+7. Use reduce() to sum up all the numbers in an array [10, 20, 30, 40].
+8. Write code using forEach() that logs each element in an array and its index.
+9. Write a program that uses map(), filter(), and reduce() in combination to first square numbers, then filter out numbers greater than 50, and finally sum them all.
+
+Higher-Order Functions: Functions that Take Other Functions as Arguments or Return Them:
+
+10. Write a higher-order function that takes a function as an argument and calls it with a number.
+11. Create a function that takes an array and a callback function, applies the callback to each element, and returns a new array.
+12. Write a function multiplyBy that takes a number x and returns a function that multiplies its argument by x. For example, const double = multiplyBy(2); should return a function that doubles its input.
+
+Example: Passing Callbacks:
+
+13. Write a function performOperation that takes two numbers and a callback function (e.g., addition, subtraction, etc.), applies the callback to the numbers, and returns the result.
+14. Demonstrate how you can use array methods like map() or filter() with callback functions to manipulate arrays.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hour 3: Promises & Async/Await
+
+Creating and Handling Promises:
+
+1. Write a function that returns a promise that resolves after 2 seconds with a success message. Log the message when the promise is resolved.
+2. Modify the above function to reject the promise with an error message. Use .then() and .catch() to handle both success and error cases.
+3. Create a function that simulates an asynchronous task (e.g., fetching data) using setTimeout. Return a promise that resolves after a delay, and handle it with .then().
+
+Using async and await for Clean Asynchronous Code:
+
+5. Rewrite the previous promise example to use async and await instead of .then().
+6. Write an async function that makes two asynchronous API calls (use setTimeout for simulation). Use await to wait for both calls and log the results in sequence.
+7. Use Promise.all() to run multiple promises in parallel, then use await to handle them together.
+
+Fetch API: Basic Usage of fetch() to Make API Calls:
+
+8. Write a function that uses the fetch() API to get data from a public API (e.g., JSONPlaceholder or a public GitHub API). Use .then() to log the fetched data.
+9. Refactor the above fetch() code to use async/await. Handle errors with a try...catch block.
+10. Write a function that uses fetch() to send a POST request to a public API, passing in some data (e.g., a new user object). Use .then() to log the response.
+11. Create a function that makes sequential API calls using fetch() and async/await. The second API call should depend on data from the first one.
+
+Bonus Practice: Combining Concepts:
+
+12. Use Promise.all() with fetch() to make multiple API requests in parallel (e.g., fetching user data and posts at the same time) and log the combined results.
+13. Demonstrate error handling in both fetch() and async/await with a failed API call, ensuring the error message is caught and logged properly.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hour 4: dvanced JavaScript:
+
+This & Arrow Functions:
+ 
+Create an object with a method that uses a regular function to log a property of the object using this. Then rewrite the method as an arrow function and observe the difference in behavior with this.
+Write a function inside a class component that uses a regular function to access this. Rewrite the same function as an arrow function. What difference do you observe in how this behaves in both cases?
+Why do arrow functions not have their own this? Provide an example using an event handler function written as both a regular function and an arrow function inside an object.
